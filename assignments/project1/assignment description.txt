@@ -1,0 +1,11 @@
+Your job is to replicate the given page as closely as possible. The finished page should contain 6 <div> elements (though it's possible to do it with less or with more). In the provided picture, each <div> is color-coded according to how it's styled; <divs> that are similarly styled share the same color.
+
+Write your answers into page.html. 
+
+Hints:
+
+1) There is one div (the blue-bordered one) that "wraps" all the other divs, and centers them in the middle of the page. Use the css `margin` and `width` properties to attain this effect.
+
+2) The green divs use the css `float` property in order to be placed side-by-side. Be sure to float each green div in the appropriate direction.
+
+3) "Floated" divs do not take up any vertical space. As a result, divs that ought to be located beneath a floated div can end up underneath the floated div. For this reason, the floated divs are contained within another div (the red-bordered one). Use this div and the css `overflow` property to deal with the vertical space issue.

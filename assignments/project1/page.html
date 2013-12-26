@@ -1,25 +1,68 @@
 <html>
   <head>
     <title>Project 1</title>
+    <style>
+      body {
+        background: #1a1a1a;
+      }
+      
+      #magentabox {
+        border: 1px solid magenta;
+        height: 100px;
+        margin-top: 70px;
+        width: 900px;
+      }
+      
+      #magentabox2 {
+        border: 1px solid magenta;
+        height: 100px;
+        width: 900px;
+      }
+      
+      #greenboxone, #greenboxtwo{
+        border: 1px solid green;
+        height: 500px;
+        margin-top: 40px;
+        padding: 5px;
+        width: 430px;  
+      }
+      
+      .left {
+        float: left;
+      }
+      
+      .right {
+        float: right;
+      }
+      
+      #redbox {
+        border: 1px dashed red;
+        height: 550px;
+        margin: 5px -2px 5px 0px;
+        width: 900px;
+      }
+     
+      
+      #wrapper {
+        background: grey;
+        border: 1px dashed blue;
+        height: auto;
+        width: 900px;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      background: #1a1a1a;
-    }
-    // use these classes to float a div right or left 
-    .left {
-      float: left;
-    }
-    .right {
-      float: right;
-    }
-    
-    // enter your CSS here:
-    
-  </style>
+  
   <body>
     <div id="wrapper">
-      <!-- all of your html code should be inside this div -->
+      <div id="magentabox"></div> 
+      <div id = "redbox">
+        <div class = "left" id="greenboxone"></div>
+        <div class = "right"id="greenboxtwo"></div>
+      </div>
+      <div id="magentabox2"></div>     
       
     </div>
   </body>

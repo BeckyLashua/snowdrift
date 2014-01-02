@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <title>Sample</title>
+    <style>
+    body {
+      background-image: URL("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjA9hP66XTXh6YjWZkIJGKTHsum3uqkKQsblt-H5vtbpoHgeFHYA");
+    }
+    .container {
+      display: inline-block;
+      margin: 0 5px 0 5px;
+      min-height: 700px;
+      width: 300px;
+    }
+    .content {
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      width: 936px;
+    }
+    .header {
+      border: 1px solid black;
+      color: white;
+      height: 250px;
+      margin: 15px 0 2px 0;
+    }
+    .font-small, font-large, font-medium {
+      font-family:Verdana;
+    }
+    .font-small {
+      font-size:12px;
+    }
+    .font-large {
+      font-size: 24px;
+    }
+    .font-extra-large {
+      font-size: 44px;
+    }
+    .left {
+      float: left;
+    }
+    .opaque {
+      background-color: rgba(0,0,0,.75);
+    }
+    .opaque-dark {
+      background-color: rgba(0,0,0,.85);
+    }
+    .window {
+      color: white;
+      border-radius: 15px;
+      text-align: center;
+    }
+    .wrapper {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%
+    }
+    .ad {
+      color: black;
+      background: #fff;
+      padding: 5px;
+      border-radius: 0;
+    }
+    .bandlist {
+      color: black;
+      background-color: rgba(255,255,0,1);
+    }
+    .no1 {
+      color: red;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .bordered-black {
+      border: 1px solid black;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header opaque-dark">
+        <center>
+          <h1 class="font-extra-large">>:3</h1>
+        </center>
+      </div>
+      <div class="content">
+      
+        <!-- left column -->
+        <div class="container left">
+          <div class="ad bordered-black window">
+            <h3> <a href="http://www.all-guitar-chords.com/">Interested in learning guitar chords?</a></h3>
+            <a href="http://www.all-guitar-chords.com/"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqnTmGll5HBLNSFu6nNDRWPTbqzKjXu4QF85_70Bv9anqMHsVX" /></a>
+          </div>
+        </div>
+        
+        <!-- middle column -->
+        <div class="container left">
+          <div class="font-large bordered-black window bandlist">
+            <ol>
+              <li><span class="no1">Arcade Fire</span></li>
+              <li>MemoryHouse</li>
+              <li>Low Roar</li>
+              <li>Father John Misty</li>
+              <li>Still Corners</li>
+              <li>Daft Punk</li>
+              <li>Beach House</li>
+              <li> <a href="http://www.newportfolk.org/lineup">...and many many more!!!</a></li>
+            </ol>
+          </div>
+        </div>
+        
+        <!-- right column -->
+        <div class="container left">
+          <div class="opaque-dark window">
+            <form>
+              <label>Username</label><br />
+              <input type="text" name="username"><br /><br />
+              <label>Password</label><br />
+              <input type="password" name="pwd"><br />
+              <input type="submit" value="Submit button"></input>
+            </form>
+          </div>
+          
+          <div class="font-small opaque-dark window">
+            <h4>Which band do you prefer?</h4>
+            <form method="GET">
+              <label>Arcade Fire</label><br />
+              <input type="radio"></input><br />
+              <label>Memoryhouse</label><br />
+              <input type="radio"></input><br />
+              <label>Father John Misty</label><br />
+              <input type="radio"></input><br />
+              <label>Still Corners</label><br />
+              <input type="radio"></input><br />
+              <label>Daft Punk</label><br />
+              <input type="radio"></input><br />
+              <label>Beach House</label><br />
+              <input type="radio"></input><br />
+              <input type="submit" value="VOTE"></input>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

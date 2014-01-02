@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Becky's Page</title>
+  <style>
+  
+  #wrapper {
+      background-image: URL("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjA9hP66XTXh6YjWZkIJGKTHsum3uqkKQsblt-H5vtbpoHgeFHYA");
+      position: absolute;
+      z-index: 0;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+  }
+  
+  #header {
+      background-color: black;
+  }
+  
+  #guitarplayerpic {
+      border: 1px solid black;
+      background-color: white;
+      position: relative;
+      margin-top: -250px;
+      width: 300px;
+      height: 255px;
+      float: left;   
+  } 
+  
+  .arcadefire {
+      font-size: 32px;
+      font-weight: bold;
+      color: red;
+  }
+  
+  #bandlist {
+      border: 1px solid black;
+      padding: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      background: yellow;
+      width: 250px;
+      text-align:center;    
+  }
+  
+  #login {
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 14px;
+      background-color: grey;
+      width: 200px;
+      height: 150px;
+      float: right;
+      margin: -480px 10px auto auto;
+      position: relative;
+      padding: 10px;
+  }
+      
+      
+  
+  #survey {
+      background-color: #99CCFF;
+      border: 5px solid black;
+      padding: 25px;
+      margin: -300px 50px auto auto;
+      position: relative;
+      width: 150px; 
+      height: 275px;
+      float: right;
+ 
+  </style>
+</head>
+<body style="text-align:center;">
+ <div id="wrapper">
+  <div id="header">
+    <h1 style="font-family:Verdana; color:blue; text-align:center;">Kitten Music Time</h1>
+    <h2 style="font-family:Tahoma; color:#CC0000";>Do you enjoy music? Of <em>course</em> you do! Who would ask that, amirite? Well, here is a list of the Kitten's top faves from the year 2013. Prepare to have your <p style="font-size:35px;">MIND BLOWN!!!</p></h2>
+  </div>
+  
+  <div id="bandlist">
+  <ol style="text-align:left; font-size:24px;font-family:Verdana;">
+    <li class="arcadefire">Arcade Fire</li>
+    <li>MemoryHouse</li>
+    <li>Low Roar</li>
+    <li>Father John Misty</li>
+    <li>Still Corners</li>
+    <li>Daft Punk</li>
+    <li>Beach House</li>
+    <li> <a href="http://www.newportfolk.org/lineup">...and many many more!!!</a></li>
+  </ol>
+  </div>
+  
+  <div id="guitarplayerpic">
+    <h3> <a href="http://www.all-guitar-chords.com/">Interested in learning guitar chords?</a></h3>
+    <a href="http://www.all-guitar-chords.com/"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqnTmGll5HBLNSFu6nNDRWPTbqzKjXu4QF85_70Bv9anqMHsVX" /></a>
+  </div>
+  
+  <div id="login">
+    <form>
+      <label>Username</label><br />
+      <input type="text" name="username"><br /><br />
+      <label>Password</label><br />
+      <input type="password" name="pwd"><br />
+      <input type="submit" value="Submit button"></input>
+    </form>
+  </div>
+  
+  <div id="survey">
+    <h4>Which band do you prefer?</h4>
+    <form method="GET" style="font-size:12px; font-weight:bold; font-family:Verdana; color:#006600;">
+      <label>Arcade Fire</label><br />
+      <input type="radio"></input><br />
+      <label>Memoryhouse</label><br />
+      <input type="radio"></input><br />
+      <label>Father John Misty</label><br />
+      <input type="radio"></input><br />
+      <label>Still Corners</label><br />
+      <input type="radio"></input><br />
+      <label>Daft Punk</label><br />
+      <input type="radio"></input><br />
+      <label>Beach House</label><br />
+      <input type="radio"></input><br />
+      <input type="submit" value="VOTE"></input>
+  </form>
+  </div>
+ </div>
+</body>
+
+</html>

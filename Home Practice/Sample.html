@@ -23,9 +23,12 @@
       height: 250px;
       margin: 15px 0 2px 0;
     }
-    .font-small, font-large, font-medium {
+    /* this way all .font classes automatically inherit the font family */
+    .font-small, font-large, font-medium, font-extra-lage {
       font-family:Verdana;
     }
+    /* each .font class makes it convenient to specify a div or span's font 
+       size */
     .font-small {
       font-size:12px;
     }
@@ -39,6 +42,11 @@
       float: left;
     }
     .opaque {
+      // the first three numbers should be integers in the range of 0-255
+      // the first integer gives the blue value, the second green, and the 
+      // third blue. The last number is the opacity. It should be a decimal 
+      // between 0-1, where zero is completely transparent, and 1 is 
+      // completely opaque.
       background-color: rgba(0,0,0,.75);
     }
     .opaque-dark {

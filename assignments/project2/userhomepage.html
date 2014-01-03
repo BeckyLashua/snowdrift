@@ -1,13 +1,73 @@
+<!--The second HTML document will represent the home page of a user of your blog. It must contain spaces for the user's bio, user's blogs, user's subscriptions, and at least one other thing of your choosing. NOTE: The blog need not be functional, all I'm looking for is a "wire-frame" for the page, i.e., a visual mock-up of the page.
+
+Additionally, you are to INCLUDE a css file (that is, you are to write a separate .css file and include it in BOTH HTML documents) which you will use to style both documents in a consistent way. You must use at least 5 unique CSS properties. You are being graded in part on presentation, so do your best to make your blog look nice.-->
+
+<!DOCTYPE HTML>
 <html>
-<head>
-  <title>Home Page</title>
-</head>
-<body>
-  <div id="header"></div>
-  <div id="sidebar"></div>
-  <div id="footer"></div>
+  <head>
+  <link type="text/css" rel="stylesheet" href="beginningblog.css" />
+  </head>
 
-</body>
+  <body>
+    <!--header section-->
+    <div class="header">
+        <h1>Homepage</h1>
+        <!--options on top of page-->
+        <div><h6 class="optionbox">Home</h6></div>
+        <div><h6 class="optionbox">Search</h6></div>
+        <div><h6 class="optionbox">Stats</h6></div>
+        <div><h6 class="optionbox">Messages</h6></div>
+        <div><h6 class="optionbox">Account Settings</h6></div>
+        <div><h6 class="optionbox">Logout</h6></div>
+    </div>
+    
+    <!--Bio Section-->
+    <div id="aboutme" class="sections">
+      <h4>About Me</h4>
+      <p>I am a graduate of the University of Massachusetts Amherst, where I studied psychology, sociology, and education. I am currently married to the most <span class="emphasis">awesomest puppys</span>in the <strong>WORLD</strong>! *Insert happy kitten face here* I live in Amherst, Ma with my husband and my two <span class="emphasis">adorable</span> pet rats, Prishe and Crinkles. Now, you might be wondering just how adorable those ratties are. Well, let me tell you. They are SO CUTES! Oh my godz. Yeahs. If you want to know more about me, <span class="emphasis">read on bitches</span>!</p>
+    </div>
+    
+    <!--Usersblog-->
+    <div id="usersblog" class="sections">
+      <h6>My Blog Posts</h6>
+      <ul>
+        <li> <a href="google.com">January 2, 2014</a></li>
+        <li> <a href="google.com">December 5, 2013</a></li>
+        <li> <a href="google.com">November 28, 2013</a></li>
+        <li> <a href="google.com">October 15, 2013</a></li>
+        <li> <a href="google.com">October 1, 2013</a></li>
+        <li> <a href="google.com">September 25, 2013</a></li>
+        <li> <a href="google.com">September 2, 2013</a></li>
+        <li> <a href="google.com">August 23, 2013</a></li>
+        <li> <a href="google.com">July 18, 2013</a></li>
+      </ul>
+    </div>
+    
+    <!--subscription list-->
+    <div id="subscription" class="sections">
+    <h5>My Subscriptions</h5>
+    <ul>
+        <li> <a href="http://feedbackfriday.blogspot.com/2012/06/mass-exodus-by-gene-levitzky.html">A Mass Exodus</a></li>
+        <li> <a href="http://www.youtube.com/user/TheAmazingAtheist">The Amazing Atheist</a></li>
+        <li> <a href="http://www.samharris.org/blog">The Blog: Sam Harris</a></li>
+        <li> <a href="http://www.chomsky.info/">Noam Chomsky</a></li>
+      </ul>
+    </div>
+    
+    <!--here is the middle part where the most recent blog is. I stole an excerpt 
+    of a blog post written by Chomsky-->
+    <div id="mostrecentblog" class="sections">
+        <h3 style="text-decoration:underline">The Dangerous Rogue States Operating in the Middle East</h3>
+        <p>An interim agreement on Iran's nuclear policies that will provide a six-month period for substantive negotiations was announced on Nov. 24.
+        Michael Gordon, a reporter for The New York Times, wrote, "It was the first time in nearly a decade, American officials said, that an international agreement had been reached to halt much of Iran's nuclear program and roll some elements of it back."</p>
 
+        <p>The United States moved at once to impose severe penalties on a Swiss firm that had violated U.S.-imposed sanctions. "The timing of the announcement seemed to be partly intended to send a signal that the Obama administration still considers Iran subject to economic isolation," Rick Gladstone explained in The Times.</p>
 
-</html>
+        <p>The "landmark accord" indeed includes significant Iranian concessions - though nothing comparable from the United States, which merely agreed to temporarily limit its punishment of Iran.</p>
+
+        <p>It's easy to imagine possible U.S. concessions. To mention just one: The United States is the only country directly violating the Nuclear Non-Proliferation Treaty (and more severely, the United Nations Charter) by maintaining its threat of force against Iran. The United States could also insist that its Israeli client refrain from this severe violation of international law - which is just one of many.</p>
+        <p> <a href="http://www.chomsky.info/articles/20131204.htm">Read More...</a></p>
+    </div>
+    
+  </body>
+  </html>

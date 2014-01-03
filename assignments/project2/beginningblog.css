@@ -1,0 +1,92 @@
+
+
+body {
+	background-color: #1F1400;
+}
+
+
+.header {
+	background-color: #336600;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin: -2px 0px auto auto;
+	text-align: center;
+	height: 100px;
+	color: #CCA352;
+	font-size: 24px;
+	font-family: Verdana;
+	font-weight: bold;
+	padding: 5px;
+	clear:both; 
+}
+
+.sections {
+	border: 1px solid black;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 10px;
+	background-color: #999966;
+	text-align: left;
+}
+
+#loginbutton {
+	border: 1px solid black;
+	width: 200px;
+	height: 150px;
+	margin: 50px auto 0px auto;
+	overflow: hidden;
+	text-align: center;
+}	
+
+#aboutme {
+	width: 200px;
+	height: 523px;
+	position: relative;
+	overflow: scroll;
+	margin: 10px auto auto 0px;	
+}
+
+#usersblog {
+	width:150px;
+	height:350px;
+	float:right;
+	margin-top: -533px;
+}
+
+#subscription {
+	width: 150px;
+	height: 140px;
+	float: right;
+	margin-top: -153px;
+	overflow: scroll;
+}
+
+#mostrecentblog {
+	width: 830px;
+	height: 460px;
+	margin: -545px 0px 0px 220px;
+	padding: 50px;	
+}
+
+.optionbox {
+	border: 1px solid black;
+	color: #CCA352;
+	border-radius: 3px;
+	background-color: #1F1400;
+	padding: 5px;
+	text-align: center;
+	z-index: 1;
+	position: relative;
+	margin-top: -235px;
+}
+	
+div div {
+	display: inline-block;
+}
+	
+	
+	
+
+
+	
+

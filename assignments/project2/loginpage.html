@@ -1,16 +1,39 @@
+<!--Your job is to create, from scratch, two HTML documents and a CSS document to style said HTML documents. 
+
+The first HTML document will represent a login screen for the blog that you will be creating. It must contain a <form> element, with two <input> elements for a username and password.
+
+The second HTML document will represent the home page of a user of your blog. It must contain spaces for the user's bio, user's blogs, user's subscriptions, and at least one other thing of your choosing. NOTE: The blog need not be functional, all I'm looking for is a "wire-frame" for the page, i.e., a visual mock-up of the page.
+
+Additionally, you are to INCLUDE a css file (that is, you are to write a separate .css file and include it in BOTH HTML documents) which you will use to style both documents in a consistent way. You must use at least 5 unique CSS properties. You are being graded in part on presentation, so do your best to make your blog look nice.
+
+As always, ask for clarification if you need it.-->
+
+
+<!DOCTYPE HTML>
 <html>
   <head>
-    <title>Login with your name and password</title>
-    <h1>Login</h1>
+    <Title>Login Page</title>
+    <link type="text/css" rel="stylesheet" href="beginningblog.css"/>
   </head>
+  
+  
   <body>
-    <form>
-    Username: <input type="text" name="username"><br>
-    Password: <input type="password" name="pwd">
-    <input type="submit" value="Submit button"></input>
-    </form>
+  
+    <div class="header">
+      <h2>Login Page</h2>
+    </div>
+    
+    <div id="loginbutton" class="sections">
+        <form method="GET">
+        <label>Username</label><br />
+        <input name="textinput1" type="text"></input>
+        <br /><br />
+        <label>Password</label>
+        <input name="textinput1" type="text"></input>
+        <br />
+        <input type="submit" value="submit button"></input>
+      </form>
+   </div>
+  
   </body>
-  
-  
-
 </html>

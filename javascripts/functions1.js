@@ -12,6 +12,7 @@ var x = 0;
 
 function factorial(n) {
   // the variable n, like y above, can only be used inside THIS function
+  
   var result = 1;
   for (var i = 1; i <= n; i++) {
     // inside this loop, i will take on the value of 1 ... n

@@ -27,7 +27,7 @@ var queue = {
      * @return {Number} The number of elements in the queue.
      */
     size: function() {
-        /* INSERT CODE HERE */
+         return this.array.length;
     },
     
     /**
@@ -35,7 +35,7 @@ var queue = {
      * @return {mixed} The element at the front of the queue, or null if empty.
      */
     peak: function() {
-        /* INSERT CODE HERE */
+          return this.array[0];
     },
     
     /**
@@ -43,10 +43,13 @@ var queue = {
      * @return {mixed} The element at the front of the queue.
      */
     pop: function() {
-        /* INSERT CODE HERE 
-         * NOTE: See the remove function to see a hint on how to remove 
-         *       elements from an array. 
-         */
+          var value = this.array[0];
+          this.array.splice(0,1);
+          return value;
+         
+          
+          
+           
     },
 
     /**
@@ -54,7 +57,7 @@ var queue = {
      * @param {mixed} The element to be inserted.
      */
     push: function(obj) {
-        /* INSERT CODE HERE */
+         this.array.push(obj);
     },
 
     /**
@@ -63,7 +66,13 @@ var queue = {
      * @return {boolean} True if the object is in the queue, and false otherwise.
      */
     contains: function(obj) {
-        /* INSERT CODE HERE */
+        for (var i = 0; i < this.array.length; i++) {
+          if (this.array[i] === obj) {
+            return true;
+          }
+       }
+       
+       return false;
     },
 
     /**
@@ -78,21 +87,12 @@ var queue = {
         // it's just a shortcut for for (var i = 0; i < this.array.length; i++)
         for (var i in this.array) {
             if (this.array[i] == obj) {
-                /* INSERT CODE HERE 
-                 * HINT: use the .splice function to remove an element from an 
-                 * array. For example, say we have var x = ['cat', 'rat', 'hat'], 
-                 * then to remove the 'hat' from x, do x.splice(2, 1). The 
-                 * first argument is 2 because that's the index of the element
-                 * we want to remove. The second argument specifies how many
-                 * elements you want to remove after the index given in the first
-                 * argument. So if you wanted to remove 'rat' and 'hat', do
-                 * x.splice(1, 2). 
-                 *
-                 * So in general, for any array x, if you want to remove an 
-                 * element in x whose index is i, do x.splice(i, 1).
-                 */
+                  this.array.splice(i,1);
+                  return obj;
             }
         }
+            
+        return false;
         
         /* INSERT CODE HERE 
          * HINT: If we're at this point in the code, then we've searched every
@@ -108,16 +108,16 @@ for (var i = 0; i < 10; i++) {
 
 console.log(queue.size()); // 10
 console.log(queue.contains(0)); // true
-console.log(queue.contains(5)); // true
+console.log(queue.contains(5)); // true ****
 console.log(queue.contains(10)); // false
 
-console.log(queue.remove(5)); // 5
+console.log(queue.remove(5)); // 5 
 console.log(queue.size()); // 9
 console.log(queue.contains(5)); // false
 
 var front = queue.pop();
 console.log(queue.size()); // 8
-console.log(front); // 0
+console.log(front); // 0 
 
 var newFront = queue.peak();
 console.log(queue.size()); // 8
@@ -125,7 +125,7 @@ console.log(newFront); // 1
 
 newFront = queue.pop();
 console.log(queue.size()); // 7
-console.log(newFront); // 1
+console.log(newFront); // 1 
 
 newFront = queue.peak();
 console.log(queue.size()); // 7

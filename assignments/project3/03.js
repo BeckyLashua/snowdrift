@@ -7,7 +7,12 @@
 */
 
 function isNegative(list, key) {
-    /* PUT YOUR CODE HERE */
+    if (list[key] < 0) {
+      return true;
+    }
+    else {
+      return false;
+    }
 }
 
 /* 
@@ -19,8 +24,16 @@ function isNegative(list, key) {
 */
 
 function smallestValue(list) {
-    /* PUT YOUR CODE HERE */
+  var currentSmallestIndex = 0;
+  for (var i = 0; i !== list.length; i++) {
+      if (list[i] <= list[currentSmallestIndex]) {
+        currentSmallestIndex = i;
+      }
+     }
+    return currentSmallestIndex;
 }
+
+
 
 /*
   [30] Fill in the body of the following function.
@@ -30,7 +43,13 @@ function smallestValue(list) {
 */
 
 function getValuesLessThan(list, number) {
-    /* PUT YOUR CODE HERE */
+    var newlist = [];
+    for (i = 0; i !== list.length; i++) {
+      if (list[i] < number) {
+      newlist.push(list[i]);
+    }
+   }
+    return newlist;
 }
 
 /*
@@ -52,8 +71,8 @@ function weakSort(list) {
         var indexOfLargest = 0; 
         
         // this loop finds the index of the largest value
-        for (var i = 0; i < list.length; i++) {
-            if (/* FILL IN THE PROPER CONDITIONAL HERE */) {
+        for (var i = 0; i <= j; i++) {
+            if (list[i] > list[indexofLargest]) { /* FILL IN THE PROPER CONDITIONAL HERE */
                 indexOfLargest = i;
             }
         }
@@ -65,6 +84,6 @@ function weakSort(list) {
         // with the jth element of the list
         var temp = list[j]; // remember what the jth element of list is
         list[j] = list[indexOfLargest];
-        list[indexOfLargest] = /* FILL IN CORRECT NEW VALUE HERE */; 
+        list[indexOfLargest] = temp;/* FILL IN CORRECT NEW VALUE HERE */; 
     }
 }

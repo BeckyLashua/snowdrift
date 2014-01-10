@@ -26,7 +26,7 @@ var queue = {
      * @return {mixed} The element at the front of the queue, or null if empty.
      */
     peak: function() {
-        return this.array.length == 0 ? null : this.array[0];
+        return this.size() == 0 ? null : this.array[0];
     },
     
     /**

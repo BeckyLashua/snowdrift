@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>JQuery Intro</title>
+    <script type="text/javascript" src="../javascripts/jquery.js"></script>
+    <script>
+    $( function() {
+      $('p').click( function() {
+          console.log("Here");
+          $(this).hide();
+      });
+    });
+    </script>
+  </head>
+  
+  <body>
+    <p>Element 1</p>
+    <p>Element 2</p>
+    <p>Element 3</p>
+    <p>Element 4</p>
+  </body>
+</html>

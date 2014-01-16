@@ -21,7 +21,7 @@ var priorityQueue = {
      * @return {Number} The maximum capacity of this priority queue.
      */
     getMaximumCapacity: function() {
-        /* ENTER NEW CODE HERE */
+        return this.maximumCapacity;
     },
     
     /**
@@ -30,7 +30,12 @@ var priorityQueue = {
      * @return {boolean} True if the capacity was changed, false otherwise.
      */
      setMaximumCapacity: function(newMaximumCapacity) {
-        /* ENTER NEW CODE HERE */
+        if (newMaximumCapacity != this.maximumCapacity) {
+            this.maximumCapacity = newMaximumCapacity;
+            return true;
+        }
+        
+        return false;
      },
     
     /**
@@ -70,7 +75,19 @@ var priorityQueue = {
      * @return {boolean} True if the element was inserted successfully, and 
      *                   false otherwise.
      */
-    push: function(obj) {
+    push: function(element) {
+    
+        if (this.size() == this.getMaximumCapacity()){
+          return false;
+        }
+        for (var i = 0; i < this.size(); i++){
+          if (element < this.array[i]) {
+            this.array.splice(i,0,element);
+            return true;
+          }
+        }
+        this.array.push(element);
+        return true;
         /* ENTER NEW CODE HERE */
         
         /* You must change the code in this method so that it does 2 additional

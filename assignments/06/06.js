@@ -3,7 +3,7 @@
   }
 // [15 pts] Write three equivalent forloops
   for (var i = 0; ;i++){
-    if (i < 24){
+    if (i < 24){ // should be i >= 24, as i = 0 in the first iteration, and i < 24. -5 pts
       break;
     }
   }
@@ -31,17 +31,20 @@
 
   for (var i = 0; i <= arr.length; i++){
   }
+  // should be for (var i in arr) ... -10 pts
 
 // [15 pts] Write a function that PRINTS to the console all even 
 // numbers from 0 to 20 inclusive, and then RETURNS true.
-  var printingEven = function(num)
+  var printingEven = function(num) {
     for (var i = 0; i <= 20; i++){
       if (num % 2 == 0){
         console.log(num);
-        return true;
+        return true; // because you put the return statement here, this will only print 0, -5
       }
-      return false;
+      return false; // never said anything about returning false, -2 pts
     }
+  }
+  
 // [15 pts] Write a function that takes an array of strings and returns 
 // the longest string.
 
@@ -51,7 +54,8 @@
       if (array[i].length > currentLongest.length){
          currentLongest = array[i];
       }
-    return currentLongest; 
+    return currentLongest;  // this should be outside of loop, otherwise loop only checks first element
+                            // -5 pts
     }
     
   }
@@ -74,19 +78,6 @@ var car = function(mpg, make, model, and mileage){
   this.mileage = mileage;
   
   this.getFullCarInfo = function(){
-    return mpg + " " + make + " " + model " " + mileage;
+    return mpg + " " + make + " " + model " " + mileage; // missing a '+' after model
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+} // +2 pts for extra function

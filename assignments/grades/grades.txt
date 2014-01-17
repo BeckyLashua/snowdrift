@@ -5,5 +5,7 @@
 2013 Dec 30 AS3 : 100
 2014 Jan 03 HW3 : 76 -10 late penalty
 2014 Jan 08 HW4 : 94
+2014 Jan 16 HW5 : 60 -40 late penalty
+2014 Jan 16 HW6 : 75
 
-Cumulative grade thus far: 92
+Cumulative grade thus far: 87.25
